@@ -15,9 +15,10 @@ module.exports = {
         loader: 'babel-loader'
       }
     ]
-  }
+  },
   output: {
     filename: 'transformed.js',
     path: __dirname + '/build'
-  }
+  },
+  plugins: [HTMLWebpackPluginConfig]
 };
